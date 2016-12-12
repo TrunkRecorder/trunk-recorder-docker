@@ -1,0 +1,6 @@
+version: '2'
+services:
+  recorder:
+    build: .
+    volumes:
+      - ./media:/app/media
