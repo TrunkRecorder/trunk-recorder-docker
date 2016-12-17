@@ -1,6 +1,8 @@
 version: '2'
 services:
   recorder:
+    privileged: true
     build: .
     volumes:
       - ./media:/app/media
+      - /dev/bus/usb:/dev/bus/usb
