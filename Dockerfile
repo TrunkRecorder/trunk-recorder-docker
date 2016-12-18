@@ -5,5 +5,5 @@ RUN mkdir /app/media
 COPY config.json /app
 COPY *.csv /app
 
-WORKDIR /app
+WORKINGDIR /app
 CMD ["recorder"]
