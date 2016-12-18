@@ -6,4 +6,4 @@ COPY config.json /app
 COPY *.csv /app
 
 WORKDIR /app
-CMD ["recorder"]
+CMD ["./recorder"]
