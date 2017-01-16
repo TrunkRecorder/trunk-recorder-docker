@@ -34,5 +34,5 @@
         "talkgroupsFile": "ChanList.csv",
 				"shortName": "dcfems"
     }],
-    "captureDir": "/home/luke/gnuradio/trunk-recorder/"
+    "captureDir": "/app/media"
 }

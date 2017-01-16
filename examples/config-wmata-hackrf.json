@@ -1,16 +1,20 @@
 {
     "sources": [
         {
-            "center": 493500000.0,
-            "rate": 8000000.0,
-            "error": -8000,
-            "gain": 14,
-            "ifGain": 40,
-            "bbGain": 40,
-            "digitalRecorders": 4,
-            "modulation": "fsk4",
-            "debugRecorders": 0,
-            "driver": "osmosdr"
+          "center": 493250000.0,
+          "rate": 8000000.0,
+          "error": -8000,
+          "gain": 14,
+          "ifGain": 24,
+          "bbGain": 36,
+          "fskGain": 0.66,
+          "digitalRecorders": 4,
+          "silenceFrames": 0,
+          "modulation": "fsk4",
+          "analogRecorders": 2,
+          "analogLevels": 32,
+          "driver": "osmosdr",
+          "device": "hackrf=0,buffers=64"
         }
     ],
     "systems": [{
@@ -18,5 +22,6 @@
         "type": "smartnet",
         "talkgroupsFile": "wmata.csv",
         "shortName": "wmata"
-    }]
+    }],
+    "captureDir": "/app/media"
 }

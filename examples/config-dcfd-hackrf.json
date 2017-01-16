@@ -14,5 +14,6 @@
         "control_channels": [855462500],
         "type": "p25",
         "talkgroupsFile": "ChanList.csv"
-    }]
+    }],
+    "captureDir": "/app/media"
 }

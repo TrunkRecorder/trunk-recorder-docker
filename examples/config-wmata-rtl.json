@@ -30,5 +30,6 @@
         "type": "smartnet",
         "talkgroupsFile": "wmata.csv",
         "shortName": "wmata"
-    }]
+    }],
+    "captureDir": "/app/media"
 }
