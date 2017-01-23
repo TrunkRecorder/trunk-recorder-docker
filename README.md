@@ -14,3 +14,5 @@ Unforunately, this only works with Docker for Linux. As far as I know, there is 
 4. `docker-compose build`
 5. `docker-compose up`
 
+## Updating config
+When you make a change to the `config.json` file you need to update the Docker container. Just run `docker-compose build` to do that.
