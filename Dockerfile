@@ -1,8 +1,9 @@
 
-FROM robotastic/trunk-recorder:wmata
+FROM robotastic/trunk-recorder:latest
 
-RUN mkdir /app/media
-COPY config.json /app
+RUN mkdir -p /app/media
+RUN mkdir -p /app/config
+
 COPY *.csv /app
 
 WORKDIR /app
