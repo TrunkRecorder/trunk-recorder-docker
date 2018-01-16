@@ -5,10 +5,10 @@ services:
       - CONFIG_FILE='config.json'
     privileged: true
     build: .
-    image: trunk-recorder:${CONFIG_FILE}
+    image: "trunk-recorder:${CONFIG_FILE}"
     volumes:
       - ./media:/app/media
       - .:/app/config
       - /dev/bus/usb:/dev/bus/usb
     working_dir: /app
-    entrypoint: /app/recorder --config=./config/${CONFIG_FILE}
+    entrypoint: "/app/recorder --config=./config/${CONFIG_FILE}"
