@@ -1,5 +1,5 @@
 
-FROM robotastic/trunk-recorder:latest
+FROM robotastic/trunk-recorder:wmata
 
 RUN mkdir /app/media
 COPY config.json /app
