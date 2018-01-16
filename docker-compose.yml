@@ -1,14 +1,9 @@
-version: '2'
+version: '3'
 services:
   recorder:
-    environment:
-      - CONFIG_FILE='config.json'
     privileged: true
     build: .
-    image: "trunkrecorder:${CONFIG_FILE}"
     volumes:
       - ./media:/app/media
-      - .:/app/config
+      - ./config:/app/config
       - /dev/bus/usb:/dev/bus/usb
-    working_dir: /app
-    entrypoint: "/app/recorder --config=./config/${CONFIG_FILE}"
