@@ -7,4 +7,4 @@ RUN mkdir -p /app/config
 COPY *.csv /app
 
 WORKDIR /app
-CMD ["./recorder --config=./config/config.json"]
+CMD ["./recorder","--config=/app/config/config.json"]
