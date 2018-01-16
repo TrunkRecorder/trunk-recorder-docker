@@ -5,7 +5,7 @@ services:
       - CONFIG_FILE='config.json'
     privileged: true
     build: .
-    image: "trunk-recorder:${CONFIG_FILE}"
+    image: "trunkrecorder:${CONFIG_FILE}"
     volumes:
       - ./media:/app/media
       - .:/app/config
