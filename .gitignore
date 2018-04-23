@@ -1,0 +1,4 @@
+/config/*
+/media/*
+/*.csv
+!.gitkeep
