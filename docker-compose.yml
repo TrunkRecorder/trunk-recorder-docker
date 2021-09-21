@@ -1,8 +1,9 @@
 version: '3'
 services:
   recorder:
+    image: "robotastic/trunk-recorder:latest"
     privileged: true
-    build: .
+    command: ["recorder","--config=/app/config/config.json"]
     volumes:
       - ./media:/app/media
       - ./config:/app/config
