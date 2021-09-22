@@ -3,8 +3,7 @@ services:
   recorder:
     image: "robotastic/trunk-recorder:latest"
     privileged: true
-    command: ["recorder","--config=/app/config/config.json"]
+    command: ["trunk-recorder","--config=/app/config.json"]
     volumes:
-      - ./media:/app/media
-      - ./config:/app/config
+      - .:/app
       - /dev/bus/usb:/dev/bus/usb
